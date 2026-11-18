@@ -1,0 +1,8 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.herlander.taskmanager.config.HttpKt.configureHttp
+      - com.herlander.taskmanager.config.SecurityKt.configureSecurity
+      - com.herlander.taskmanager.routes.RoutingKt.configureRouting
